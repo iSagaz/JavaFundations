@@ -17,8 +17,8 @@ public class EntradaFixacao {
       System.out.println("Digite a população da sua cidade:" );
       int população = sc.nextInt();
       System.out.println("Digite o tamanho da sua cidade:" );
-     double tamanho = sc.nextDouble()
-      System.out.println("cidade" + cidade + "\nestado" + estado "\npopulação");
+     double tamanho = sc.nextDouble();
+      System.out.println("cidade" + cidade + "\nestado" + estado + "\npopulação");
 
       sc.close();
 
