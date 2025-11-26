@@ -78,11 +78,10 @@ public class Desafios1a5 {
 
         if (parcelas == 6) {
 
-            System.out.println("O valor finaçl é de " + valor final)
+            System.out.println("O valor final é de " + valor final)
     }
 
-        if (parcelas <= 6 parcelas) {
-           System.out.println()
+        
 
 
 
