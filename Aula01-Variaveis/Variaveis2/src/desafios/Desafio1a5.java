@@ -37,7 +37,16 @@ public class Desafio1a5 {
         System.out.println("Sua media final foi de " + notaFinal );
 
         //Desafio 4 calculalora de juros simples
- 
+         System.out.print("Digite o capital inicial: ");
+        double capital = sc.nextDouble();
+        System.out.print("Digite a taxa de juros mensal: ");
+        double taxaJuros = sc.nextDouble() / 100;
+        System.out.print("Tempo em meses: ");
+        int meses = sc.nextInt();
+
+        double juros = capital * taxaJuros * meses;
+
+        System.out.println("O valor dos juros foi de R$" + String.format("%.2f", juros));
 
 
         //Desafio 5 area e perimetro de um circulo
