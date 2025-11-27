@@ -68,16 +68,16 @@ public class Desafios1a5 {
         System.out.println("Digite o valor do seu emprestimo: ");
         double emprestimo = sc.nextDouble();
         sc.nextLine();
-        System.out.println("Digite o numero de parcelas:  ")
-        System.out.println("6x - 5% de juros"
-        System.out.println("12x - 10% de juros")
-                System.out.println("24x - 20% de juros")
+        System.out.println("Digite o numero de parcelas:  ");
+        System.out.println("6x - 5% de juros");
+        System.out.println("12x - 10% de juros");
+                System.out.println("24x - 20% de juros");
 
         int parcelas = sc.nextInt();
         double valorFinal;
 
         if (parcelas == 6) {
-            System.out.println("O valor final do seu emprestimo será de R$ " + valorFinal )
+            System.out.println("O valor final do seu emprestimo será de R$ " + valorFinal );
         } else if (parcelas == 12){
             valorFinal = emprestimo * 1.10;
             System.out.println("O valor final do seu empréstimo será de R$ " + valorFinal );
