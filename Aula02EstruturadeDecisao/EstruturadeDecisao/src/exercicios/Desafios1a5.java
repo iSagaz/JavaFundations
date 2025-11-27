@@ -22,14 +22,14 @@ public class Desafios1a5 {
         System.out.println("Digite a velocidade do veiculo: ");
         int velocidade = sc.nextInt();
         
-        if (velocidade > 90 ) {
-        double
-
+                if (velocidade > 90) {
+            double valorMulta = (velocidade-90) * valorKm;
+            System.out.println("Você foi multado em " + valorMulta);
+        } else {
+            System.out.println("Você não foi multado");
         }
-        } else if (velocidade > 90) {
-             System.out.println("Pagara multa de 10 reais");
-        }
 
+      
         //Desafio 3 Advinhe o numero
 
         System.out.println("Escolha um numero de 1 a 10 :");
@@ -77,11 +77,19 @@ public class Desafios1a5 {
         double valorFinal;
 
         if (parcelas == 6) {
+            System.out.println("O valor final do seu emprestimo será de R$ " + valorFinal )
+        } else if (parcelas == 12){
+            valorFinal = emprestimo * 1.10;
+            System.out.println("O valor final do seu empréstimo será de R$ " + valorFinal );
+        } else {
+            valorFinal = emprestimo * 1.20;
+            System.out.println("O valor final do seu empréstimo será de R$ " + valorFinal );
+        }
 
-            System.out.println("O valor final é de " + valor final)
+        sc.close();
+
     }
-
-        
+}
 
 
 
