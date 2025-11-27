@@ -18,15 +18,15 @@ public class Desafio6 {
         double valorFinal;
 
         Switch(opcao) {
-            case 1:
+            case A:
               valorFinal= valorGasto * 0.9
               break;
 
-              case 2:
+              case B:
                 valorFinal = valorGasto * 0.95;
                 break;
 
-            case 3:
+            case C:
                 System.out.println("Informe a forma de parcelamento");
                 System.out.println(" 1 - a vista");
                 System.out.println("2 - 2 parcelas");
@@ -38,12 +38,16 @@ public class Desafio6 {
                 System.out.println("O valor final foi de " + valorFinal);
              break;
 
-            case "2":
-                
-        }
+            case "2":                                         valorFinal = valorGasto * 1.05 / 2;
+                        System.out.println("O valor final foi de " + valorFinal);
+                        break;
 
+                    case "3":
+                        valorFinal = valorGasto * 1.1 / 3;
+                        System.out.println("O valor final foi de " + valorFinal);
+                        break;
+              
 
-
-
+        sc.close();
     }
 }
