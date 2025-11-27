@@ -23,10 +23,9 @@ public class Desafio1a5 {
         double taxa = sc.nextDouble();
         System.out.println("Digite o numero de meses: ");
         int meses = sc.nextInt();
+        double jurosTotal = 1 + juros;
 
-
-
-
+        double montante = capitalInicial * Math.pow(jurosTotal,meses);
         System.out.println("A montante final é de R$ " + String.format("%.2f"));
 
        //Desafio 3 media do aluno
