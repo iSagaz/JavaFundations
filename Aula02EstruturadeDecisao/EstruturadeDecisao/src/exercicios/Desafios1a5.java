@@ -91,12 +91,5 @@ public class Desafios1a5 {
     }
 }
 
-
-
-
-
-
-
-        sc.close();
-        }
-    }
+        
+    
