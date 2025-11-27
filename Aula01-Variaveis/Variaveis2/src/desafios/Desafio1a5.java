@@ -11,7 +11,10 @@ public class Desafio1a5 {
         double celsius = sc.nextDouble();
         double fahrenheit = (celsius * 9 / 5 ) + 32;
         double kevin = celsius + 273.15;
-        System.out.println("A temperatura de fahrenheit é " + celsius + "9 / 5 + 32 " + "kevin = celsius + 273.15");
+              
+        System.out.println("Celsius = " + celsius + "°C");
+        System.out.println("Fahrenheit = " + fahrenheit + "°F");
+        System.out.println("kelvin = " + kelvin + "K");
 
         //Desafio 2 calculando juros compostos
         System.out.println("Digite a capital inicial:");
