@@ -37,12 +37,7 @@ public class Desafio1a5 {
         System.out.println("Sua media final foi de " + notaFinal );
 
         //Desafio 4 calculalora de juros simples
-        System.out.println("Qual é a capital, a taxa de juros mensal (%) e o tempo.");
-        double capital = sc.nextDouble();
-        double taxadeJuros = sc.nextDouble();
-        double tempo = sc.nextDouble();
-        System.out.println("Seu montante final é de " + capital + "capital" + "*" + taxadeJuros + "taxadeJuros" + "*" + tempo + "Tempo");
-
+ 
 
 
         //Desafio 5 area e perimetro de um circulo
