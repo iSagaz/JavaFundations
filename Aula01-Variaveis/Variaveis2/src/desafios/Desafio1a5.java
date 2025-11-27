@@ -54,7 +54,9 @@ public class Desafio1a5 {
         double raio = sc.nextDouble();
         double perimetro = Math.PI * 2 * raio;
         double area = Math.pow(raio,2);
-        System.out.println()
+                System.out.println("O perímetro é de " + perimetro + "m");
+        System.out.println("A área é de " + area + "m²");
+
 
         sc.close();
 
