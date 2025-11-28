@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Aula02EstruturadeDecisao/EstruturadeDecisao/EstruturadeDecisao.iml" filepath="$PROJECT_DIR$/Aula02EstruturadeDecisao/EstruturadeDecisao/EstruturadeDecisao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JavaFundations.iml" filepath="$PROJECT_DIR$/.idea/JavaFundations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula02EstruturadeDecisao/Operadores/Operadores.iml" filepath="$PROJECT_DIR$/Aula02EstruturadeDecisao/Operadores/Operadores.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula01-Variaveis/Variaveis/Variaveis.iml" filepath="$PROJECT_DIR$/Aula01-Variaveis/Variaveis/Variaveis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula01-Variaveis/Variaveis2/Variaveis2.iml" filepath="$PROJECT_DIR$/Aula01-Variaveis/Variaveis2/Variaveis2.iml" />
+    </modules>
+  </component>
+</project>
