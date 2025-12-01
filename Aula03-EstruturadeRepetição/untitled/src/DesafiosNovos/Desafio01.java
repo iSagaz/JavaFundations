@@ -14,11 +14,15 @@ public class Desafio01 {
         int numero = sc.nextInt();
         int fatorial = 1;
 
-        for (int i = 1; i <= numero; i++){
-            fatorial *= i;
-
+        if(numero < 0) {
+            System.out.println("Nao existe fatorial para esses numeros");
+        } else {
+            for (int i = 1; i <= numero; i++) {
+                fatorial *= i;
+            }
+        }
             System.out.println("O Fatorial de " + numero + " é igual a " + fatorial);
 
-        }
+            sc.close();
     }
 }

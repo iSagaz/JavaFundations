@@ -12,19 +12,19 @@ public class Desafio05 {
 
          System.out.println("Digite um numero:");
          int numero = sc.nextInt();
+         int soma = 0;
+         int casa = 1;
+         int digito = 0;
 
-         while(true){
-         numero =  numero = + 1 + 2 + 3
-
+         while(numero > 0){
+         digito = (int) (numero % Math.pow (10, casa));
+         numero -= digito;
+         digito = (int) (digito / Math.pow (10, casa - 1));
+         soma += digito;
+         casa++;
          }
+         System.out.println("A soma dos digitos é: " + soma);
 
-
-
-
-
-
-
-
-
+         sc.close();
     }
 }
