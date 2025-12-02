@@ -18,29 +18,29 @@ public class Desafio2 {
 
        //Média: 25.0
 
-       ArrayList<Integer> = new ArrayList<>();
-       Integer numero;
+       ArrayList<Integer> numero = new ArrayList<>();
 
        numero.add("10");
        numero.add("20");
-       numero.add("3");
-       numero.add("3");
-       numero.add("3");
-       numero.add("3");
-       numero.add("3");
-       numero.add("3");
-       numero.add("3");
-       numero.add("3");
+       numero.add("30");
+       numero.add("40");
+       numero.add("50");
+       numero.add("60");
+       numero.add("70");
+       numero.add("80");
+       numero.add("90");
+       numero.add("100");
 
+       int somaTotal = 0;
 
+       for (int valor : numero) {
+           somaTotal += valor;
+       }
 
+       System.out.println("Soma total: " + somaTotal);
 
-
-
-
-
-
-
+       double media = somaTotal / (double) numero.size();  // Cast para double para precisão
+       System.out.println("Média: " + media);
 
 
    }
