@@ -1,5 +1,6 @@
 package desafios;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Desafio4 {
@@ -15,8 +16,22 @@ public class Desafio4 {
        //
        //Removendo palavras que contêm “a": []
 
+       ArrayList<String> lista = new ArrayList<>();
+       lista.add("Computador");
+       lista.add("Colher");
+       lista.add("Escada");
+       lista.add("Mouse");
+       lista.add("Servidor");
+       lista.add("Cadeira");
 
+       System.out.println("Digite uma letra: ");
+       String letra = sc.nextLine().toUpperCase();
 
+       lista.removeIf(String nome -> nome.toUpperCase().contains(letra));
+
+          for (String nome : lista) {
+           System.out.println("Nome: " + nome);
+       }
 
        sc.close();
    }
