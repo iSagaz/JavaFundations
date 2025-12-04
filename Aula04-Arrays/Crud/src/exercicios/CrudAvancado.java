@@ -1,11 +1,29 @@
 package exercicios;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
-public class CrudeAvancado {
+public class CrudAvancado {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        ArrayList<String> menuLanches = new ArrayList<>(Arrays.asList(
+                "X - Burguer",
+                "X - EGG",
+                "X - Bacon",
+                "X - Salada",
+                "X - Tudo"
+
+        ));
+
+        ArrayList<Double> menuPrecos = new ArrayList<>(Arrays.asList(
+                22.9,
+                24.9,
+                26.9,
+                26.9,
+                29.9
+
+        ));
         ArrayList<String> nomealunos = new ArrayList<>();
         ArrayList<Double> notasAlunos = new ArrayList<>();
         ArrayList<Integer> idadeAlunos = new ArrayList<>();
@@ -53,24 +71,34 @@ public class CrudeAvancado {
                     break;
 
                 case 3:
-                    System.out.println("\n Atualizar cadastro do aluno: ");
+                    System.out.println("\nAtualizar cadastro do aluno: ");
                     System.out.println("Digite o ID do aluno: ");
                     int idAluno = sc.nextInt();
-                    nomealunos.remove(idAluno);
                     sc.nextLine();
 
-                    System.out.println("Digite o idade do aluno: ");
-                    int idadeAlunos2 = sc.nextInt();
+                    if (idAluno >= 0 && idAluno < nomealunos.size()) {
+                        System.out.println("Digite o novo nome do aluno: ");
+                        String novoNome = sc.nextLine();
 
-                    System.out.println("Digite a Nota do aluno: ");
-                    double notaAluno2 = sc.nextDouble();
+                        System.out.println("Digite a nova idade do aluno: ");
+                        int idadeAlunos2 = sc.nextInt();
+                        sc.nextLine();
 
-                    System.out.println("Atualizacao feita com sucesso! ");
+                        System.out.println("Digite a nova Nota do aluno: ");
+                        double notaAluno2 = sc.nextDouble();
+
+
+                        nomealunos.set(idAluno, novoNome);
+                        idadeAlunos.set(idAluno, idadeAlunos2);
+                        notasAlunos.set(idAluno, notaAluno2);
+
+                        System.out.println("Atualização feita com sucesso!");
+                    } else {
+                        System.out.println("Aluno não encontrado!");
+                    }
                     break;
 
-                   nomealunos.set(idAluno, nomealunos);
-                   idadeAlunos.set(idadeAlunos2, idadeAlunos);
-                   notasAlunos.set(notaAluno2, notasAluno);
+
 
                 case 4:
                     System.out.println("\n excluir cadastro do aluno: ");
