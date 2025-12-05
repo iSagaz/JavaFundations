@@ -1,127 +1,149 @@
-package desafios;
+package desafio;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Desafio1 {
+public class CrudLanchonete {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-                ArrayList<String> menuLanches = new ArrayList<>(Arrays.asList(
-                        "X - Burguer",
-                        "X - EGG",
-                        "X - Bacon",
-                        "X - Salada",
-                        "X - Tudo"
 
-                ));
+        ArrayList<String> menuLanches = new ArrayList<>(Arrays.asList(
+                "X-Burguer",
+                "X-Egg",
+                "X-Bacon",
+                "X-Salada",
+                "X-Tudo"
+        ));
 
-                ArrayList<Double> menuPrecos = new ArrayList<>(Arrays.asList(
-                        22.9,
-                        24.9,
-                        26.9,
-                        26.9,
-                        29.9
+        ArrayList<Double> menuPrecos = new ArrayList<>(Arrays.asList(
+                22.9,
+                24.9,
+                26.9,
+                26.9,
+                29.9
+        ));
 
-                ));
-        ArrayList<String> pedidos = new ArrayList<>();
-        ArrayList<Integer> ValorLanchePedido = new ArrayList<>();
-        ArrayList<Double> Quantidade = new ArrayList<>();
-        ArrayList<Integer> ValorTotal = new ArrayList<>();
+        ArrayList<Double> listaValorTotal = new ArrayList<>();
+        ArrayList<Double> listaValorUnitario = new ArrayList<>();
+        ArrayList<Integer> listaQuantidade = new ArrayList<>();
+        ArrayList<String> listaPedido = new ArrayList<>();
 
         int opcao;
 
         while (true) {
-            System.out.println("SISTEMA DE PEDIDOS");
-            System.out.println("1 - Fazer pedido");
-            System.out.println("2 - Listar pedidos");
-            System.out.println("3 - Atualizar pedidos");
-            System.out.println("4 - Cancelar pedidos");
-            System.out.println("5 - Sair");
-            System.out.println("Escolha uma opção do sistema de pedidos:");
 
+            System.out.println("\n-----SISTEMA DE PEDIDOS-----");
+            System.out.println("1 - FAZER PEDIDO");
+            System.out.println("2 - LISTAR PEDIDOS");
+            System.out.println("3 - ATUALIZAR PEDIDO");
+            System.out.println("4 - CANCELAR PEDIDO");
+            System.out.println("5 - SAIR");
+            System.out.print("ESCOLHA UMA OPÇÃO: ");
             opcao = sc.nextInt();
             sc.nextLine();
 
             switch (opcao) {
                 case 1:
-                    System.out.println("/n ------- CARDAPIO ------");
-                    for (int i = 0; i < menuLanches.size(); i++) {
-                        System.out.println(i + " - " + menuLanches.get(i) + " - " + menuPrecos.get(i) );
+
+                    System.out.println("-----CARDÁPIO-----");
+                    for(int i = 0; i < menuLanches.size(); i++){
+                        System.out.println(i + " - " +  menuLanches.get(i) +  " - " +  menuPrecos.get(i));
                     }
 
-                    System.out.println("Digite o número do item do pedido:");
-                    int indicePedido = sc.nextInt();
+                    System.out.print("Informe o código do lanche: ");
+                    int indiceLanche = sc.nextInt();
                     sc.nextLine();
 
-                    String pedido = menuLanches.get(indicePedido);
+                    String pedido = menuLanches.get(indiceLanche);
 
-                    System.out.println("Selecione a quantidade de pedidos:");
-                    int quantidade = sc.nextInt();
+                    System.out.print("Informe a quantidade de lanches: ");
+                    int quantidadeLanchesPedidos = sc.nextInt();
                     sc.nextLine();
 
-                    System.out.println("Informe o valor do lanches:");
-                    double quantidadeLanchesPedidos = sc.nextDouble();
-                    sc.nextLine();
+                    double valorLanchePedido = menuPrecos.get(indiceLanche);
 
-                    double valorLanchePedido = menuPrecos.get(indicePedido);
-                    sc.nextLine();
+                    double valorTotalPedido = valorLanchePedido * quantidadeLanchesPedidos;
 
-                    double valorTotalPedido = ValorLanchePedido * quantidadeLanchesPedidos ;
+                    listaPedido.add(pedido);
+                    listaValorUnitario.add(valorLanchePedido);
+                    listaQuantidade.add(quantidadeLanchesPedidos);
+                    listaValorTotal.add(valorTotalPedido);
 
-                        pedidos.add(valorTotalPedido);
-                        ValorLanchePedido.add(IndicePedido);
-
-
-                    System.out.println("Seu pedido cadastrado com sucesso!");
+                    System.out.println("Pedido realizado com sucesso");
                     break;
 
                 case 2:
-                    if (pedidos.isEmpty()) {
-                        System.out.println("Nenhum pedido encontrado!");
+                    System.out.println("\n-----LISTA PEDIDOS-----");
+
+                    if (listaPedido.isEmpty()) {
+                        System.out.println("Nenhum pedido encontrado");
                     } else {
-                        System.out.println("\nLista de pedidos:");
-                        for (int i = 0; i < pedidos.size(); i++) {
-                            System.out.println(i + "Pedido: " + pedidos.get(i)  + "Quantidade: " + pedidos.get(i) + "ValorLanchePedido" + pedidos.get(i) + "ValorTotal: " + pedidos.get(i));
+                        for (int i = 0; i < listaPedido.size(); i++) {
+                            System.out.println("|" + i + "| Lanche: " +  listaPedido.get(i) +
+                                    "| Quantidade: " + listaQuantidade.get(i) +
+                                    "| Valor Unitário: " + listaValorUnitario.get(i) +
+                                    "| Valor Total: " +  listaValorTotal.get(i) + "|");
                         }
                     }
                     break;
 
                 case 3:
-                    System.out.println("\n ------ Atualizar Pedido ------");
-                    System.out.println("Informe o Id do Pedido: ");
-                    int idPedido = sc.nextInt();
+                    System.out.println("\n-----ATUALIZAR PEDIDO-----");
+                    System.out.println("Informe o número do pedido: ");
+                    int pedidoNumero = sc.nextInt();
                     sc.nextLine();
-                    if (idPedido >= 0 && idPedido < pedidos.size()) {
-                        System.out.println("Informe o novo pedido: ");
-                        String nomePedido = sc.nextLine();
-                        pedidos.set(idPedido, nomePedido);
-                        System.out.println("Pedido atualizado com sucesso!");
-                    } else {
-                        System.out.println("Pedido não encontrado!");
+
+                    System.out.println("-----CARDÁPIO-----");
+                    for(int i = 0; i < menuLanches.size(); i++){
+                        System.out.println(i + " - " +  menuLanches.get(i) +  " - " +  menuPrecos.get(i));
                     }
+
+                    System.out.println("Digite o código do lanche: ");
+                    int opcaoLanche = sc.nextInt();
+                    sc.nextLine();
+
+
+                    String novoPedido = menuLanches.get(opcaoLanche);
+
+                    System.out.print("Informe a quantidade de lanches: ");
+                    int novaQuantidadeLanchesPedidos = sc.nextInt();
+                    sc.nextLine();
+
+
+                    double novoValorLanchePedido = menuPrecos.get(opcaoLanche);
+                    sc.nextLine();
+
+                    double novoValorTotalPedido = novoValorLanchePedido * novaQuantidadeLanchesPedidos;
+
+                    listaPedido.set(pedidoNumero, novoPedido);
+                    listaValorUnitario.set(pedidoNumero, novoValorLanchePedido);
+                    listaQuantidade.set(pedidoNumero, novaQuantidadeLanchesPedidos);
+                    listaValorTotal.set(pedidoNumero, novoValorTotalPedido);
+
+                    System.out.println("Pedido Atualizado com sucesso");
                     break;
 
                 case 4:
-                    System.out.println("\n ------ Cancelar pedido ------");
-                    System.out.println("Informe o Id do pedido: ");
-                    int idPedido2 = sc.nextInt();
+                    System.out.println("-----REMOVER PEDIDO-----");
+                    System.out.println("Informe o número do pedido: ");
+                    int numeroPedido =  sc.nextInt();
                     sc.nextLine();
-                    if (idPedido2 >= 0 && idPedido2 < pedidos.size()) {
-                        pedidos.remove(idPedido2);
-                        System.out.println("Pedido removido com sucesso!");
-                    } else {
-                        System.out.println("Pedido não encontrado!");
-                    }
+
+                    listaQuantidade.remove(numeroPedido);
+                    listaPedido.remove(numeroPedido);
+                    listaValorTotal.remove(numeroPedido);
+                    listaValorUnitario.remove(numeroPedido);
                     break;
 
                 case 5:
-                    System.out.println("\n ------ Sair do programa ------");
+                    System.out.println("Programa finalizado");
                     return;
-
             }
+
+
         }
+
     }
 }
-
-
