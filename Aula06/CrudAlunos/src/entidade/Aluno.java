@@ -4,10 +4,9 @@ public class Aluno {
     private String nome;
     private double nota1;
     private double nota2;
+    private String escola;
 
-    public String getNome() {
-        return nome;
-    }
+
 
     public void setNome(String nome) {
         this.nome = nome;
