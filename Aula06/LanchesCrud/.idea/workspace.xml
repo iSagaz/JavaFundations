@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9ede8b91-aeb0-4d5b-a77f-a96c07053f8c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Aula05/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula05/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula05/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula05/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula05/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula05/AulaO5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula05/Roupa/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula05/Roupa/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula05/Roupa/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula05/Roupa/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula05/Roupa/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula05/Roupa/Roupa.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula05/Roupa/src/desafios/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula05/Roupa/src/desafios/Roupa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula05/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula06.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ContaBancaria/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ContaBancaria/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ContaBancaria/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ContaBancaria/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ContaBancaria/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ContaBancaria/ContaBancaria.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ContaBancaria/src/entidades/ContaBancaria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ContaBancaria/src/entidades/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CrudAlunos/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CrudAlunos/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CrudAlunos/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CrudAlunos/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CrudAlunos/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CrudAlunos/CrudAlunos.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CrudAlunos/src/entidade/Aluno.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CrudAlunos/src/entidade/GerenciarAlunos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CrudAlunos/src/entidade/MainAluno.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CrudLanches/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CrudLanches/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CrudLanches/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CrudLanches/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CrudLanches/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CrudLanches/CrudLanches.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CrudLanches/src/Gerenciarpedidos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CrudLanches/src/Lanche.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CrudLanches/src/MainPedido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CrudLanches/src/Menulanche.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio01 - Carro/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio01 - Carro/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio01 - Carro/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio01 - Carro/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio01 - Carro/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio01 - Carro/Desafios.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio01 - Carro/src/Carro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio01 - Carro/src/Filme.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio01 - Carro/src/MainCarro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desafio01 - Carro/src/MainFilme.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LanchesCrud.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entidades/Lanches.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entidades/ListaPedidos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entidades/MenuLanches.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entidades/Pedido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introducaoPOO/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introducaoPOO/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introducaoPOO/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introducaoPOO/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introducaoPOO/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introducaoPOO/introducaoPOO.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introducaoPOO/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introducaoPOO/src/desafios/CadastrandoPOO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introducaoPOO/src/desafios/CadastroPOO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introducaoPOO/src/exerciciosPOO/AlunoPOO.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="36htUgZf5uoWWNII75TcNIYXMM9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Aluno/Documents/GitHub/JavaFundations/Aula06/LanchesCrud/src/Main.java&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="LanchesCrud" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9ede8b91-aeb0-4d5b-a77f-a96c07053f8c" name="Changes" comment="" />
+      <created>1765470648029</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1765470648029</updated>
+      <workItem from="1765470649627" duration="10994000" />
+      <workItem from="1765482295261" duration="421000" />
+      <workItem from="1765482764177" duration="753000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -86,7 +86,10 @@ public class Main{
 
 
                 }
-
+                case 6 -> {
+                    System.out.println("Programa finalizado com sucesso!");
+                    return;
+                }
             }
         }
     }
