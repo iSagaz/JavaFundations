@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Roupas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilização personalizada -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            background-color: #0d6efd;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        #apiResponse {
+            font-family: monospace;
+            white-space: pre-wrap;
+            background-color: #212529;
+            color: #f8f9fa;
+            border-radius: 6px;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8 col-sm-12">
+
+            <div class="card">
+                <div class="card-header text-center">
+                    <h5>Cadastro de Roupas</h5>
+                </div>
+
+                <div class="card-body">
+                    <form id="formRoupas">
+
+                        <!-- Tipo -->
+                        <div class="mb-3">
+                            <label class="form-label">Tipo</label>
+                            <select class="form-select" id="tipo" required>
+                                <option value="">Selecione</option>
+                                <option value="Camisa">Camisa</option>
+                                <option value="Blusa">Blusa</option>
+                                <option value="Suéter">Suéter</option>
+                            </select>
+                        </div>
+
+                        <!-- Quantidade -->
+                        <div class="mb-3">
+                            <label class="form-label">Quantidade</label>
+                            <input type="number" class="form-control" id="quantidade" min="1" step="1" required>
+                        </div>
+
+                        <!-- Valor -->
+                        <div class="mb-3">
+                            <label class="form-label">Valor</label>
+                            <input type="number" class="form-control" id="valor" min="0.01" step="0.01" required>
+                        </div>
+
+                        <!-- Tamanho -->
+                        <div class="mb-3">
+                            <label class="form-label">Tamanho</label>
+                            <select class="form-select" id="tamanho" required>
+                                <option value="">Selecione</option>
+                                <option value="PP">PP</option>
+                                <option value="P">P</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                                <option value="GG">GG</option>
+                            </select>
+                        </div>
+
+                        <!-- Marca -->
+                        <div class="mb-3">
+                            <label class="form-label">Marca</label>
+                            <input type="text" class="form-control" id="marca" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">
+                            Cadastrar
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+
+            <!-- Resposta da API -->
+            <div class="mt-4">
+                <h6>Resposta da API:</h6>
+                <div id="apiResponse">Aguardando envio...</div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript puro -->
+<script>
+    document.getElementById("formRoupas").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        // Coleta e conversão correta dos dados
+        const roupa = {
+            tipo: document.getElementById("tipo").value,
+            quantidade: parseInt(document.getElementById("quantidade").value),
+            valor: parseFloat(document.getElementById("valor").value),
+            tamanho: document.getElementById("tamanho").value,
+            marca: document.getElementById("marca").value
+        };
+
+        // Envio para a API REST
+        fetch("http://localhost:8080/roupas", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(roupa)
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Erro na requisição");
+            }
+            return response.json();
+        })
+        .then(data => {
+            document.getElementById("apiResponse").textContent =
+                JSON.stringify(data, null, 2);
+        })
+        .catch(error => {
+            document.getElementById("apiResponse").textContent =
+                "Erro ao enviar os dados:\n" + error;
+        });
+    });
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
