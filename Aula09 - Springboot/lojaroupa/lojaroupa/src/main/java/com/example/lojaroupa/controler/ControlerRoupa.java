@@ -1,6 +1,12 @@
 package com.example.lojaroupa.controler;
 
+import com.example.lojaroupa.model.DadosRoupa;
+import com.example.lojaroupa.model.Roupa;
+import com.example.lojaroupa.model.RoupaRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 // controler responsavel por receber as requisicoes em http
 // rest - API rest
@@ -18,10 +24,17 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("roupas")
 @CrossOrigin(origins = "*")
 public class ControlerRoupa {
+    @Autowired
+    private RoupaRepository roupaRepository;
 
     @PostMapping
-    public void CadastrarRoupa(@RequestBody String roupa){
-        System.out.println(roupa);
+    public void CadastrarRoupa(@RequestBody DadosRoupa dadosRoupa){
+        roupaRepository.save(new Roupa(dadosRoupa));
+    }
+
+    @GetMapping
+    public List<Roupa> listar(){
+        return roupaRepository.findAll();
     }
 }
 
